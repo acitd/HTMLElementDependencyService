@@ -17,7 +17,7 @@ Then just start the service.
 dependency_service.start();
 ```
 
-## Set a depencency
+## Define a depencency
 To define an element as a dependecy you can use the add(...) method with this syntax:
 ```js
 𝘴𝘦𝘳𝘷𝘪𝘤𝘦.add(𝘥𝘦𝘱𝘦𝘯𝘥𝘦𝘯𝘤𝘺,...𝘥𝘦𝘱𝘦𝘯𝘥𝘦𝘯𝘵𝘴);
