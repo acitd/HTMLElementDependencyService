@@ -4,7 +4,7 @@ If the dependency is removed from the DOM, the dependents are also removed.
 
 ## Import
 ```html
-<script src="src/js/HTMLElementDependencyService.js"></script>
+<script src="𝘱𝘢𝘵𝘩/HTMLElementDependencyService.js"></script>
 ```
 
 ## Initialization
