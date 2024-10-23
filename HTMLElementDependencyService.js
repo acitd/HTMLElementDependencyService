@@ -20,7 +20,8 @@ class HTMLElementDependencyService{
 		clearInterval(this.interval);
 	}
 	add(el,...dependants){
-		if(!el.__dependency_id) el.__dependency_id=++this.last_id;
+		if(!el.__dependency_id)
+			el.__dependency_id=++this.last_id;
 		if(!this.els[el.__dependency_id]) this.els[el.__dependency_id]={
 			el,
 			dependants:[]
