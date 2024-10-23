@@ -7,13 +7,12 @@ class HTMLElementDependencyService{
 	}
 	start(){
 		this.interval=setInterval(()=>{
-			for(const id in this.els){
+			for(const id in this.els)
 				if(!this.root_el.contains(this.els[id].el)){
 					for(const dependant of this.els[id].dependants)
 						dependant.remove();
 					delete this.els[id];
 				}
-			}
 		},this.delay);
 	}
 	stop(){
