@@ -22,10 +22,11 @@ class HTMLElementDependencyService{
 	add(el,...dependants){
 		if(!el.__dependency_id)
 			el.__dependency_id=++this.last_id;
-		if(!this.els[el.__dependency_id]) this.els[el.__dependency_id]={
-			el,
-			dependants:[]
-		};
+		if(!this.els[el.__dependency_id])
+			this.els[el.__dependency_id]={
+				el,
+				dependants:[]
+			};
 		this.els[el.__dependency_id].dependants.push(...dependants);
 	}
 }
