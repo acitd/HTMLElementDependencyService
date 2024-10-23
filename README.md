@@ -1,5 +1,5 @@
 # HTML Element Dependency Service
-Makes some html elements dependent on others.
+Makes some html elements dependent on others.  
 If the dependency is removed from the DOM, the dependents are also removed.
 
 ## Import
