@@ -34,5 +34,8 @@ dependency_service.add(head,aside);    // we make the aside element too
 
 // TEST
 head.remove();    // now the head and all its dependents are removed afte a while
-
 ```
+
+## Use case
+Let's say you render or add a `button` to the body, but for structural reasons you prefer to inject the css and js into the head.
+In this case, you can make the `style` and `script` tag dependent on the button, so if for any reason the button is removed, its css and js are also removed.
