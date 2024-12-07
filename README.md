@@ -20,17 +20,17 @@ dependency_service.start();
 ## Define a depencency
 To define an element as a dependecy you can use the add(...) method with this syntax:
 ```js
-𝘴𝘦𝘳𝘷𝘪𝘤𝘦.dependency(𝘥𝘦𝘱𝘦𝘯𝘥𝘦𝘯𝘤𝘺).add(...𝘥𝘦𝘱𝘦𝘯𝘥𝘦𝘯𝘵𝘴);
+𝘴𝘦𝘳𝘷𝘪𝘤𝘦.dependency(𝘥𝘦𝘱𝘦𝘯𝘥𝘦𝘯𝘤𝘺).of(...𝘥𝘦𝘱𝘦𝘯𝘥𝘦𝘯𝘵𝘴);
 ```
 ## Example
 ```js
 const head=document.querySelector('head');
 const main=document.querySelector('main');
 const footer=document.querySelector('footer');
-dependency_service.dependency(head).add(main,footer);    // we make the main and the footer element dependants of the head
+dependency_service.dependency(head).of(main,footer);    // we make the main and the footer element dependants of the head
 
 const aside=document.querySelector('aside');
-dependency_service.dependency(head).add(aside);    // we make the aside element too
+dependency_service.dependency(head).of(aside);    // we make the aside element too
 
 // TEST
 head.remove();    // now the head and all its dependents are removed afte a while
