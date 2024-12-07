@@ -1,3 +1,6 @@
+DEPRECATED, use this instead:
+https://github.com/acitd/dom-node-dependency-service
+
 # HTML Element Dependency Service
 Makes some html elements dependent on others.  
 If the dependency is removed from the DOM, the dependents are also removed after a while.
