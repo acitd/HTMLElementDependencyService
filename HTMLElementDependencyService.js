@@ -26,7 +26,7 @@ class HTMLElementDependencyService{
 		this.dependency=dependency;
 		return this;
 	}
-	add(...dependants){
+	of(...dependants){
 		this.els[this.dependency.__dependency_id].dependants.push(...dependants);
 	}
 }
